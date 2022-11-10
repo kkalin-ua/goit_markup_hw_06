@@ -397,7 +397,7 @@
         <p>Ім'я</p>
         <label for="user-name" class="forms-label">
           <input tabindex="1" class="forms-input" placeholder="" id="user-name" type="text"
-          name="user-name">
+          name="user-name" minlength="3" required>
           <svg class="icon-form">
             <use href="./images/svg/symbol-defs.svg#icon-user-name"></use>
           </svg>
@@ -408,7 +408,7 @@
         <p class="title-form">Телефон</p>
         <label for="user-phone" class="forms-label">
           <input tabindex="2" class="forms-input" placeholder="" id="user-phone" type="tel"
-          name="user-phone">
+          name="user-phone" required>
           <svg class="icon-form">
             <use href="./images/svg/symbol-defs.svg#icon-user-phone"></use>
           </svg>
@@ -419,7 +419,7 @@
         <p class="title-form">Пошта</p>
         <label for="user-mail" class="forms-label">
           <input tabindex="3" class="forms-input" placeholder="" id="user-mail" type="email"
-          name="mail">
+          name="mail" required>
           <svg class="icon-form">
             <use href="./images/svg/symbol-defs.svg#icon-user-mail"></use>
           </svg>
@@ -436,7 +436,7 @@
       <div>
         <label for="soglashenie">
           <input tabindex="5" class="soglashenie" id="soglashenie" type="checkbox"
-          name="mail"> Погоджуюся з розсилкою та приймаю <a href="#" tabindex="6" class="soglashenie-link">Умови договору</a>
+          name="mail" required> Погоджуюся з розсилкою та приймаю <a href="#" tabindex="6" class="soglashenie-link">Умови договору</a>
         </label>
       </div>
 
