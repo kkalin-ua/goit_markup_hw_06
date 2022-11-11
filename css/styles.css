@@ -669,10 +669,9 @@ header {
 .commits:hover,
 .commits:focus {
   border: 1px solid var(--blue-color);
-
-
-
-
+}
+.forms-input:focus + svg {
+  fill: var(--blue-color);
 }
 .footer-forms-btn {
   position: relative;
@@ -744,6 +743,14 @@ header {
   box-sizing: border-box;
   border-radius: 4px;
 }
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .soglashenie {
   width: 16px;
   height: 16px;
@@ -1100,6 +1107,9 @@ header {
   
 }
 .modal-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
   margin-right: 10px;
   width: 18px;
   height: 18px;
