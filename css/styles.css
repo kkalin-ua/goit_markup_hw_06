@@ -26,7 +26,6 @@ html {
 .link {
   text-decoration: none;
   margin: 0;
-
 }
 body {
   /* padding-top: 83px; */
@@ -38,7 +37,6 @@ h1, h2, h3, ul, p, li {
   margin: 0;
 }
 .container {
-  
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -109,18 +107,12 @@ h1, h2, h3, ul, p, li {
   letter-spacing: 0.02em;
   color: var(--black-color);
 } 
-
-
-
 .contact-link-icon {
   vertical-align: text-top;
   margin-right: 10px;
   width: 16px;
   height: 16px;
-  
 } 
-
-
 
 .header-link:hover,
 .header-link:focus,
@@ -145,13 +137,9 @@ h1, h2, h3, ul, p, li {
   outline: 0;
   outline-offset: 0;
 }
-
-
-
 .header-list {
   display: flex;
 }
-
 .header-list .header-item + .header-item {
   margin-left: 50px;
 }
@@ -172,22 +160,15 @@ header {
   right: 0;
   height: 80px;
   z-index: 20;
-  
 }
-
-
 .header-navigation,
 .header-container {
-  
   display: flex;
   align-items: center;
-  
 }
 .activ {
   color: var(--blue-color);
-  
 }
-
 .activ::after {
   position: absolute;
   display: inline-block;
@@ -198,12 +179,7 @@ header {
   border-radius: 2px;
   bottom: 0;
   left: 0;
-
 }
-
-
-
-
 
 
 /* ===== main ===== */
@@ -221,9 +197,6 @@ header {
     rgba(47, 48, 58, 0.4)
   ),
     url(../images/cap-background.jpg);
-
-    
-
 }
 .section-cap-h1 {
   font-weight: 900;
@@ -290,7 +263,6 @@ header {
   background-size: contain;
   background-position: center;
 }
-
 .icon-antena::before{
   background-image: url(../images/antena.png);
   background-size: 66px 70px;
@@ -308,13 +280,9 @@ header {
   background-image: url(../images/astronaut.png);
   background-size: 55px 60px;
 }
-
-
 .section-advantage-list .list + .list {
   margin-left: 30px;
 }
-
-
 .section-advantage-h3 {
   font-weight: 700;
   font-size: 14px;
@@ -331,7 +299,6 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--gray-color);
-
 }
 .section-title {
   font-weight: 700;
@@ -378,10 +345,6 @@ header {
   padding-top: 27px;
   padding-bottom: 27px;
 }
-
-
-
-
 .section-team{
   background: var(--white2-color);
   padding-top: 94px;
@@ -424,7 +387,6 @@ header {
   letter-spacing: 0.03em;
   color: var(--gray-color);
   padding-bottom: 16px;
-  
 }
 
 
@@ -447,7 +409,6 @@ header {
   transition: color 250ms, background-color 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* background-color: tomato; */
-  
 }
 .member-link-item:hover,
 .member-link-item:focus {
@@ -467,9 +428,6 @@ header {
 :focus .links-icon {
   fill: var(--white-color);
 }
-
-
-
 .links-icon:hover,
 .links-icon:focus {
   fill: var(--white-color);
@@ -480,9 +438,12 @@ header {
 .modal-icon:focus {
   fill: var(--blue-color)
 }
+
+
 /* .contact-link-icon:hover  */
 .contact-link-icon {
   fill: currentColor;}
+
 
 /* section-clients */
 
@@ -507,16 +468,13 @@ header {
 }
 .client-logo-icon {
   padding: 16px 32px;
-
 }
-
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--blue-color);
   color: var(--blue-color);
   fill: var(--blue-color)
 }
-
 .clients-link:focus .client-logo-icon {
   fill: var(--blue-color)
 }
@@ -529,7 +487,6 @@ header {
 .container-footer-nav {
   width: 231px;
 }
-
 .footer {
   background: #2f303a;
   /* text-align: left; */
@@ -626,6 +583,7 @@ header {
   margin-left: 70px;
 }
 
+
 /* === footer-forms === */
 
 .footer-form {
@@ -706,11 +664,9 @@ header {
   /* background-color:  tomato; */
   background-image: url(../images/icon-send.png);
 }
-
 .modal-forms {
   padding: 40px;
 }
-
 .modal-forms h3 {
   font-weight: 700;
   font-size: 20px;
@@ -727,7 +683,6 @@ header {
   letter-spacing: 0.03em;
   color: var(--gray-color);
 }
-
 .forms-input {
   width: 448px;
   height: 40px;
@@ -751,11 +706,12 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.soglashenie {
+.soglashenie-checkbox {
+  display: flex;
+  align-items: center;
+  appearance: none;
   width: 16px;
   height: 16px;
-  margin-top: 20px;
-  margin-bottom: 30px;
   /* padding-left: 12px; */
 }
 .soglashenie-link {
@@ -765,11 +721,27 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: #188CE8;
 }
-
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  /* background-color: tomato; */
+  border: 3px solid #212121;
+}
+.soglashenie-checkbox:checked + .checkbox-icon {
+  background-color: var(--blue-color);
+  background-image: url(../images/svg/icon-check.svg);
+  background-size: contain;
+  background-origin: content-box;
+  border: 3px solid transparent;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
 .modal-forms-btn {
   position: relative;
   display: inline-block;
 
+  margin-top: 30px;
   text-align: center;
   font-family: inherit;
   background: var(--blue-color);
@@ -806,27 +778,6 @@ textarea::placeholder {
   left: 15px;
   top: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ===== portfolio.html ====== */
@@ -875,8 +826,6 @@ textarea::placeholder {
 .section-project-link:focus .overlay{
   transform: translateY(0);
 }
-
-
 .hiden-card {
   font-weight: 400;
   font-size: 18px;
@@ -887,8 +836,6 @@ textarea::placeholder {
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 .section-project-item:hover,
 .section-project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -898,7 +845,6 @@ textarea::placeholder {
   padding-bottom: 0;
   /* margin-bottom: 94px; */
 }
-
 .section-top-btn {
   cursor: pointer;
   font-weight: 500;
@@ -921,8 +867,6 @@ textarea::placeholder {
 .section-top-list li:nth-child(1) button{
   padding: 6px 25px;
 }
-
-
 .section-project-h3 {
   font-weight: 700;
   font-size: 18px;
@@ -952,17 +896,13 @@ textarea::placeholder {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-
-
 .section-top-list {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   justify-content: center
-  
 }
-
 .section-top-list .list + .list {
   margin-left: 8px;
 }
@@ -1011,9 +951,7 @@ textarea::placeholder {
 .effect:hover::after {
   width: 100%;
   left: 0;
-
 }
-
 .effect_second::after {
   position: absolute;
   content: '';
@@ -1034,7 +972,6 @@ textarea::placeholder {
 .effect_second:hover::after {
   transform: scaleX(1);
 }
-
 .effect-3 {
   --b: 5px;   /* the thickness of the line */
   --c: var(--blue-color); /* the color */
@@ -1054,9 +991,6 @@ textarea::placeholder {
 }
 
 
-
-
-
 /* ==== backdrop ==== */
 
 .backdrop {
@@ -1074,7 +1008,6 @@ textarea::placeholder {
     opacity: 0;
     pointer-events: none;
   }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -1089,8 +1022,7 @@ textarea::placeholder {
 
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  }
+}
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -1103,8 +1035,6 @@ textarea::placeholder {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
-  
 }
 .modal-icon {
   position: absolute;
@@ -1113,7 +1043,6 @@ textarea::placeholder {
   margin-right: 10px;
   width: 18px;
   height: 18px;
-
 }
 
 
